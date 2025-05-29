@@ -1,6 +1,6 @@
 import xml.etree.ElementTree as ET
 import math
-import ezdxf
+
 
 # --- Constants ---
 CANVAS_SIZE: int = 540
@@ -82,6 +82,7 @@ def draw_to_dxf(
     start_angle_deg: float = DEFAULT_START_ANGLE,
     angle_increment_deg: float = DEFAULT_ANGLE_INCREMENT
 ) -> None:
+    import ezdxf
     """
     Draws the areas to a DXF file.
     Args:
